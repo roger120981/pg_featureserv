@@ -89,6 +89,12 @@ func TestArithmetic(t *testing.T) {
 	checkCQL(t, "p = 'a' || x || 'b'", "\"p\" = 'a' || \"x\" || 'b'")
 }
 
+func TestPropertyName(t *testing.T) {
+	checkCQL(t, `"ns:Prop_Name$" = 1`, `"ns:Prop_Name$" = 1`)
+	checkCQL(t, `"eo:grid" = 'MGRS-01GBQ'`, `"eo:grid" = 'MGRS-01GBQ'`)
+	checkCQL(t, `"s2:datatake_id" = 'S2C'`, `"s2:datatake_id" = 'S2C'`)
+}
+
 func TestLiteral(t *testing.T) {
 	checkCQL(t, "p > 1.0E+1", "\"p\" > 1.0E+1")
 	checkCQL(t, "p > 1.0e+1", "\"p\" > 1.0e+1")

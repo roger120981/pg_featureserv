@@ -3,6 +3,10 @@
 ## Version ??
 *Released: TBD*
 
+### Improvements
+
+* Allow colons in property names
+
 ### Bug Fixes
 
 * Fix CQL parser to allow multiple AND/OR terms (#162)

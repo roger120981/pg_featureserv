@@ -24,11 +24,11 @@ The basic elements of filter expressions are values obtained
 from feature collection properties, and literals (constants).
 
 **Properties** are referred to by name.
-Property names can be quoted, to support including special characters.
+Property names can be quoted, to support including special characters `_`, `$` and `:`.
 
 ```
 propname
-"quoted_name$"
+"ns:Quoted_name$"
 ```
 
 **Literals** can be numbers, boolean or text values.

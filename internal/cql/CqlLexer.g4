@@ -127,7 +127,7 @@ CharacterStringLiteralStart : QUOTE -> more, mode(STR);// (Character)* QUOTE;
 
 Identifier : IdentifierStart IdentifierPart* | DOUBLEQUOTE Identifier DOUBLEQUOTE;
 IdentifierStart : ALPHA;
-IdentifierPart : ALPHA | DIGIT | UNDERSCORE | DOLLAR;
+IdentifierPart : ALPHA | DIGIT | UNDERSCORE | DOLLAR | COLON;
 
 ALPHA : [A-Za-z];
 
