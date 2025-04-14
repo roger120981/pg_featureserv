@@ -62,6 +62,7 @@ It includes [*OGC API - Features*](http://docs.opengeospatial.org/is/17-069r3/17
 
 ### CQL expressions
 - [x] property names
+  - names allow quoting, upper and lower case, symbols `_:$`
 - [x] character literals
 - [x] numeric literals
 - [x] arithemetic expressions
